@@ -2,7 +2,7 @@ package com.Java.basics;
 
 public abstract class AbstractModifier {
 
-	/* ***Abstract class***
+	/* ***Abstract class ***
 	 * Abstract class is class that cannot be Initialized (Cannot create object of abstract class)
 	 *
 	 * If a class is declared as abstract then the sole purpose is for the class to be extended.
