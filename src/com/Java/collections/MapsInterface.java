@@ -1,5 +1,6 @@
 package com.Java.collections;
 
+
 import java.util.*;
 
 
@@ -35,6 +36,9 @@ public class MapsInterface {
 	      System.out.println("HashMap Elements:");
 	      System.out.print(m1);
 	      
+	      System.out.println("\n");
+	      m1.forEach((key,value)-> System.out.println(key+"="+value));
+	      
 	      
 	 //******************LinkedHashMaps*******************//
 	      
@@ -47,7 +51,7 @@ public class MapsInterface {
 		  m3.put(32,"Ayan" );
 		  m3.put(15,"Daisy" );
 		  m3.put(16,"Daisy" );
-		  m3.put(15,"Daisy" ); //Doesn't store both duplicate key+values
+		  m3.put(15,"Daisy" ); //Doesn't store both duplicate keys
 		  m3.put(2,null );
 		  m3.put(3,null );
 		  m3.put(null,"Akshay" );
@@ -73,17 +77,27 @@ public class MapsInterface {
 		  m2.put(32,"Ayan" );
 		  m2.put(15,"Daisy" );
 		  m2.put(16,"Daisy" );
-		  m2.put(2,null );
+		  m2.put(2,"Akshay" );
 		  m2.put(3,null );
-		  
+		 
 		  
 		  //m1.put(null,"Akshay" ); gives null pointer exception
 		  
 		  
 		  System.out.println("\n\nSorted TreeMap Elements:"); System.out.print(m2);
 		 
+		  System.out.println();
+		  Iterator <Map.Entry<Integer,String>>itr = m2.entrySet().iterator();
 		  
+		  while(itr.hasNext()) {
+			  
+			  Map.Entry<Integer,String> entry = itr.next();
+			  
+			  System.out.println(entry.getKey()+": "+entry.getValue());
+			  
+		  }
 	      
+	
 	
 	}
 

@@ -1,6 +1,6 @@
 package com.Java.oops;
 
-public class Inheritance {
+ public class Inheritance {
 
 	
 	  int z,age,num=10;
@@ -17,12 +17,12 @@ public class Inheritance {
 	
 	   
 	   // display method of superclass
-	   public void display() {
+	      void display() {
 	      System.out.println("This is the display method of superclass");
 	   }
 	   
 	   
-	   Inheritance(int age) {
+	    public Inheritance(int age) {
 		      this.age = age; 		 
 		   }
 	   

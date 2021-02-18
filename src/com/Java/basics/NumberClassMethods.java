@@ -107,16 +107,40 @@ public class NumberClassMethods {
 	    //******************Integers***********************
 	   
 	    
-	    Integer car1=  Integer.valueOf(128);        //Integers are interned from -128 to 127
-	    Integer car2=  Integer.valueOf(128); 
+	    Integer car1=  Integer.valueOf(127);        //Integers are interned from -128 to 127
+	    Integer car2=  Integer.valueOf(127); 
+	    Integer carr3=  Integer.valueOf(128);        //Integers are interned from -128 to 127
+	    Integer carr4=  Integer.valueOf(128); 
+	    
+	    if (car1==(car2)) 
+	    {
+	    	System.out.println("== Operator: Integers objects are Equal.");
+	    }
+	    else {
+	    	System.out.println("== Operator: Integers objects are not Equal");
+	    }
+	    
+	    if (carr3==(carr4)) 
+	    {
+	    	System.out.println("== Operator: Integers objects are Equal.");
+	    }
+	    else {
+	    	System.out.println("== Operator: Integers objects are not Equal.");
+	    }
+	    
 	    
 	    if (car1.equals(car2)) 
 	    {
-	    	System.out.println("Integers objects are Equal.");
+	    	System.out.println("Equals method: Integers objects are Equal.");
 	    }
 	    else {
-	    	System.out.println("Integers objects are not Equal.");
+	    	System.out.println("Equals method: Integers objects are not Equal.");
 	    }
+	    
+	   
+	    
+	    
+	   
 	    
 	    
 	    //********************Strings**********************
@@ -134,7 +158,7 @@ public class NumberClassMethods {
 	    if(car3.equals(car4))
 	    	
 	    {
-	    	System.out.println("Strings are Equal.\n"+car3+" " +car4);
+	    	System.out.println("\nStrings are Equal.\n"+car3+" " +car4);
 	    }
 	    
 	    else

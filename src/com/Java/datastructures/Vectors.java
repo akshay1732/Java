@@ -18,6 +18,7 @@ public class Vectors {
 	      v.addElement(new Integer(2));
 	      v.addElement(new Integer(3));
 	      v.addElement(new Integer(4));
+	      
 	      System.out.println("Capacity after four additions: " + v.capacity());
 
 	      v.addElement(new Double(5.45));
